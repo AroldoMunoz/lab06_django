@@ -1,20 +1,24 @@
 Laboratorio 6 
 
 Django - Usando una plantilla para ver Destinos Turísticos 
+
 I. Objetivos 
 ● Implementar una aplicación en Django utilizando una plantilla profesional. 
 ● Utilizar una tabla de Destinos turísticos para leer y completar la página web. 
 ● Utilizar los tags “if” y “for” en los archivos html para leer todos los registros de  una tabla desde una base de datos. 
+
 II. Temas a tratar 
 ● Proyectos de Django 
 ● Aplicaciones en Django 
 ● Plantillas profesionales  
 ● Tags para vistas dinámicas 
+
 III. Marco teorico 
 Documentación de Django 
 Un framework es una abstracción en la cual se puede reusar código y funcionalidades  adaptándolos a nuestras necesidades.  
 Un modelo en un framework se suele referir a los datos y su organización 
 Una vista permite apreciar el resultado de la lectura de una tabla incluida en una página  web. 
+
 IV. Actividades 
 1. Crear un proyecto en Django 
 2. Siga los pasos del video para poder implementar la aplicación de Destinos  turísticos 
