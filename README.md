@@ -1,4 +1,4 @@
-#Laboratorio 6 
+# Laboratorio 6 
 
 Django - Usando una plantilla para ver Destinos Turísticos 
 
