@@ -14,7 +14,7 @@ Django - Usando una plantilla para ver Destinos Turísticos
   - Tags para vistas dinámicas
 
 ## III. Marco teorico 
-  Documentación de Django 
+  Documentación de Django.
   Un framework es una abstracción en la cual se puede reusar código y funcionalidades  adaptándolos a nuestras necesidades.
   Un modelo en un framework se suele referir a los datos y su organización
   Una vista permite apreciar el resultado de la lectura de una tabla incluida en una página  web.
