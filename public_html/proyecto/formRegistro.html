@@ -1,0 +1,210 @@
+
+<!DOCTYPE html>
+<META HTTP-EQUIV="Content-Type" content="text/html; charset=utf-8"/>
+<html>
+<head>
+<link rel= "stylesheet" type= "text/css" href= "estilo1.css">
+<title>Registrate</title>
+      <style type="text/css">
+        #datos{
+          width: 30%;
+          margin: auto;
+        }
+        #typetext{
+          
+        }
+
+      </style>
+<script>
+   function destino(){
+      var section = document.getElementById('texto');
+      var section2 = document.getElementById('imagenes');
+      var section3 = document.getElementById('mititulo');
+      section.style.display='none';
+      section2.style.display='none';
+      section3.style.display='none';
+      var section4 = document.getElementById('destinos'); 
+      var section5 = document.getElementById('mitexto');
+      var section6 = document.getElementById('miimagen');
+      section5.visibility='none';
+      section6.visibility='none';
+      section4.style.visibility=true;
+   }
+   function limpiar(){
+         document.getElementById("datos").reset();
+      }
+
+      function valida(f){
+
+        var ok=true;
+        var msg = "Debes escribir algo en los campos:\n";
+        if(f.elements["dni"].value == "")
+        {
+          msg += "- DNI \n";
+          ok = false;
+        }
+
+        if(f.elements["nombre"].value == "")
+        {
+          msg += "- nombre\n";
+          ok = false;
+        }
+
+        if(f.apellido.value == "")
+        {
+          msg += "- apellido\n";
+          ok = false;
+        }
+        if(f.nacionalidad.value == ""){
+          msg += "- Nacionalidad\n";
+          ok = false;
+        }
+        if(f.correo.value == ""){
+          msg += "- Correo\n";
+          ok = false;
+        }
+        if(f.numero.value == ""){
+          msg += "- Numero\n";
+          ok = false;
+        }
+        if(ok == false)
+          alert(msg);
+      return ok;
+
+      }
+</script>
+</head>
+<body>
+<div id="titulo">
+  <div id="logo">
+    <table >
+      <tr>
+        <td><img src="imagenes/logo.jpg" height="160" width="200"></td>
+        <td><h1>Guia turistica virtual AREQUIPA</h1></td>
+      </tr>
+      <tr>
+        <td><img src="imagenes/mochila.png" height = "100" width="240"></td>
+      </tr>
+    </table>
+  </div>
+  <div id = "imagenTitulo">
+    <img src="imagenes/catedral_2.jpg" width="1023" height="272">
+  </div>
+  <div id = "menu">
+    <ul class = "mi-menu">
+      <li> <a href="principal.html"> Inicio </a></li>
+      <li> <a href="nosotros.html"> Nosotros </a></li>
+      <li> <a href="../cgi-bin/destinos.pl" target="destinos" onclick="destino()">Destinos turisticos </a>
+      <ul>
+          <li> <a href="campina.html">Campiña</a></li> 
+          <li> <a href="tour.html">Arequipa tour</a></li>
+          <li> <a href="rafting.html">Rafting rio Chili</a></li>
+          <li> <a href="downhill.html">Downhill volcan Chachani</a></li>
+          <li> <a href="descensoMisti.html">Descenso en el Misti</a></li>
+          <li> <a href="colca.html">Colca Full Day</a></li>
+          <li> <a href="colcaX2.html">Colca 2 dias/ 1 noches</a></li>
+          <li> <a href="colcaX3.html">Colca 3 dias/ 2 noches</a></li>
+      </ul>
+      </li>
+      <li> <a href="galeria.html"> Galeria de imagenes </a></li>
+      <li> <a href="formReservas.html" > Reservas </a></li>
+      <li> <a href="testimonios.html">Testimonios </a></li>
+      <li> <a href="contactenos.html">Contactenos </a></li>
+    </ul>
+  </div>
+</div>
+<div id = "cuerpo">
+    <h1> Formulario de Registro </h1>
+      <form id="datos" action="../cgi-bin/validar.pl" method="post" onsubmit="return valida(this)">
+       <fieldset >
+        <legend>Datos personales</legend>               
+            DNI/Pasaporte  *</br>
+              <input type="text" name="dni" id="typetext"></br>              
+            Nombres  * </br>
+              <input type="text" name="nombre" id="typetext" size="35"></br>
+            Apelidos  * </br>
+              <input type="text" name="apellido" id="typetext" size="35"></br>
+            Nacionalidad  * </br>
+              <input type="text" name="nacionalidad" id="typetext"></br>
+            Correo  * </br>
+              <input type="text" name="correo" id="typetext" size="35"></br>
+            Numero  * </br>
+              <input type="text" name="numero" id="typetext" maxlength="9"></br>
+            Sexo * 
+            <select name="sexo">
+              <option value="0">Femenino</option>
+              <option value="1">Maculino</option>
+
+            </select>
+            </br></br>
+           <form id="frm1">
+            <input type="button" onclick="limpiar()"value="Restablecer">
+          </form>
+            <input type="submit" value="Registrar">
+            
+        </fieldset>
+      </form>
+
+</div>
+<div id="panel">
+  <div id="menuRight">
+    <ul>
+      <li> <a href="historia.html">Historia de AREQUIPA </a></li>
+      <li> <a href="gastronomia.html">Gastronomia Arequipeña </a></li>
+      <li> <a href="calendario.html">Calendario turistico</a></li>
+      <li> <a href="hoteles.html">Hoteles</a></li> 
+      <li> <a href="restaurantes.html">8 Restaurantes para comer</a></li>
+    </ul>
+  </div>
+  <div id="imagenPanel">
+    <a href="mapas.html">
+      <img src="imagenes/mapa.jpg" alt ="Mapa" width="295" height="295"></a>
+    <div id= "descripcion">Mapa de la ciudad de Arequipa</div>
+  </div>
+  <div id="imagenPanel">
+    <a href="campina.html">
+      <img src="imagenes/campina_1.jpg" alt="Campina" width="295" height="200"></a>
+    <div id = "descripcion"> Vista a la Campiña de Arequipa</div>
+  </div>
+  <div id="imagenPanel">
+    <a href="rafting.html">
+      <img src="imagenes/rafting_1.jpg" alt = "Rafting" width="295" height = "200"></a>
+    <div id = "descripcion"> Rafting en el Rio Chili</div> 
+  </div>
+  <div id= "imagenPanel">
+    <a href="downhill.html">
+      <img src= "imagenes/downhill_1.jpg" alt = "Rafting" width="295" height="200"></a>
+    <div id = "descripcion"> Downhill en el Volcan Chachani </div>
+  </div>
+  <div id= "imagenPanel">
+    <a href= "colca.html">
+      <img src = "imagenes/colca_1.jpg" alt = "Colca" width="295" height= "200"></a>
+    <div id = "descripcion"> Vista Panoramica Cañon del Colca </div>
+  </div> 
+
+</div>
+<div id="piePagina">
+
+  <div id="enlaces">
+    <center><b>Enlaces de interes</b></center>
+      <ul>
+        <li><a href="http://www.colcaperu.gob.pe/" target="blank">Cañon del colca</a> </li>
+        <li><a href="http://www.santacatalina.org.pe/" target="blank">Monasterio de Santa Catalina</a></li>
+        <li><a href="http://www.libertador.com.pe/" target="blank">Hotel Libertador</a></li>
+      </ul>
+  </div>
+  <div id="nosotros">
+<p>  <b>Direccion <br>
+Av Las Casuarionas 766 - Cercado<br>
+Arequipa</b><br>
+<b>Numeros de Contacto<br>
+Telefono: 054 765643<br>
+Movistar: 969791234<br>
+ Claro:   948439111</b> <br>
+ 
+</p>
+</div>
+<center><br><br><br><br><br><p>Copyrigth 2013 - Derechos Reservados</p></center>
+</div>
+<body>
+</html>

@@ -1,0 +1,293 @@
+h1{
+  font-size:58px;
+  font-family:Gabriola;
+  font-style:italic;
+  text-align:center;
+  text-shadow: 2px 2px green;
+  line-height:85%;
+  color:white;
+}
+h2{
+  font-size:70px;
+  font-family:Vivaldi;
+  text-align:center;
+  text-shadow: 2px 2px white;
+  line-height:85%;
+  color:black;
+}
+h3{
+  font-size:20px;
+  font-family:Segoe Print;
+  color:#808000;
+}
+
+p{
+  font-size:18px;
+  color:black;
+}
+body {
+  background-image:url('imagenes/fondo1.jpg');  
+}
+table{
+  position:absolute;
+
+}
+#titulo{
+  position:absolute;
+  outline-style:solid;
+  outline-color:black;
+  background-color:black;
+  border-style:solid;
+  border-color:white;
+  left:40px;
+  top:15px;
+  width:1275px;
+  height:275px;
+  z-index:1;
+}
+#imagenTitulo{
+  position:absolute;
+  width:1025px;
+  height:272px;
+  left:250px;
+}
+#menu{
+  position:absolute;
+  margin-left:-5px;
+  top:283px;
+}
+#logo{
+  position:absolute;
+  width:1185px;
+  top:0px;
+  height:272px;
+  z-index:2;
+}
+#cuerpo{
+  position:absolute;
+  border-style:solid;
+  border-color:#A9A9A9;
+  left:40px;
+  top:345px;
+  width:950px;
+  height:1243px;
+  background-color: white;
+   
+}
+#cuerpo p{
+  font-size: 14px;
+  text-align: justify;
+  margin-left: 2px;
+  margin-right: 2px;
+  width: 935px;
+}
+
+#cuerpo li{
+  margin-left: 12px;
+ }
+#texto{
+  position:absolute;
+  left:670px;
+  top:72px;
+  width:260px;
+  height:340px;
+}
+#panel{
+  position:absolute;
+  border-style:solid;
+  border-color:#A9A9A9;
+  left:1000px;
+  top:345px;
+  width:317px;
+  height:1243px;
+}
+#piePagina{
+  position: absolute;
+  border-style: solid;
+  border-color: #A9A9A9;
+  top: 1597px;
+  left: 40px;
+  height: 135px;
+  width: 1276px;
+  background-color:#00BFFF;
+  color: black;
+
+}
+#enlaces{
+  position: absolute;
+  width: 250px;
+  left: 100px;
+   top: 10px;
+}
+#enlaces li{
+  list-style-type:none;
+  line-height:18px; 
+}
+#enlaces a{
+  display:block;
+  text-decoration:none;
+  color:white;
+  background:#00BFFF;
+  padding: 3px 6px 3px 6px;
+}
+
+#enlaces a:hover{
+  background:black;
+  border-radius: 1.5em;
+}
+#nosotros{
+  position: absolute;
+  width: 200px;
+  left: 900px;
+
+}
+#nosotros p{
+  font-size: 10px;
+  font-family: arial;
+  line-height: 1.5em;
+  text-align: center;
+  margin-right: 20px;
+}
+
+#piePagina p{
+   font-size: 10px;
+  font-family: arial;
+  line-height: 1.5em;
+  text-align: center;
+  margin-right: 20px;
+}
+
+#imagenPanel{
+  margin:5px;
+  padding:5px;
+  border:1px solid black;
+  height:auto;
+  width:auto;
+  float:left;
+  text-align:center;
+}
+#imagenPanel img{
+  display:inline;
+  margin 5px;
+  border:1px solid #ffffff;
+  height: 150px;
+}
+#imagenPanel a:hover img{
+  border: 1px solid #8A2BE2;
+}
+#descripcion{
+  text-align:center;
+  font-weight:normal;
+  width:250px;
+  margin:5px;
+}
+#imagenes{
+  position:absolute;
+  left:10px;
+  top:70px;
+  width:1255px;
+  height:400px;
+}
+.mi-menu{
+  position:absolute;
+  border-radius: 5px;
+    list-style-type: none;
+    margin: 0 auto; 
+    padding: 0;
+    height: 40px; 
+    width:1286px;
+    background: #000000;
+  
+}
+
+.mi-menu  li {
+    display: block;
+    float: left; /* la lista se ve horizontal */
+    height: 40px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: relative;
+  }
+.mi-menu li a {
+    border-left: 1px solid #000;
+    border-right: 1px solid #666;
+    color: #FFFFFF;
+    display: block;
+    font-family: Tahoma;
+    font-size: 13px;
+    font-weight: bold;
+    line-height: 28px;
+    padding: 0 14px;
+    margin: 6px 0;
+    text-decoration: none;
+}
+
+.mi-menu li:first-child a { border-left: none; }
+.mi-menu li:last-child a{ border-right: none; }
+.mi-menu li:hover > a {
+  background-color: #3399FF;
+  color:white;
+}
+
+.mi-menu ul {
+    border-radius: 0 0 5px 5px;
+    left: 0;
+    margin: 0;
+    opacity: 0; 
+    position: absolute;
+    top: 40px; 
+    background: #222;
+
+  }
+  
+.mi-menu li:hover > ul { opacity: 1; }
+
+.mi-menu ul li {
+    height: 0;
+    overflow: hidden;
+    padding: 0;
+  }
+.mi-menu li:hover > ul li {
+    height: 36px;
+    overflow: visible;
+    padding: 0;
+  }
+.mi-menu ul li a {
+    border: none;
+    border-bottom: 1px solid #111;
+    margin: 0;
+    padding: 5px 20px;
+    width: 175px;
+  }
+.mi-menu ul li:last-child a { border: none; }
+
+#menuRight{
+  border:1px solid white;
+  border-width:1px 1px 0 1px;
+  width:312px;
+  left:5px;
+  font-family:Arial;
+  font-weight:bold;
+  font-size:0.8em;
+  
+}
+#menuRight ul{
+  margin:0;
+  padding:0;
+}
+#menuRight li{
+  list-style-type:none;
+  border-bottom:1px solid white;
+  line-height:33px; 
+}
+#menuRight a{
+  display:block;
+  text-decoration:none;
+  color:white;
+  background:#00BFFF;
+  padding: 3px 6px 3px 6px;
+}
+#menuRight a:hover{
+  background:black;
+}

@@ -1,0 +1,20 @@
+.destinos{
+	width: 23%;
+	height: auto;
+	background-color: #fafafa;
+	/*border:1px solid gray;*/
+	display: inline-block;
+	vertical-align: top;
+	margin-left: 1%;
+	margin-top: 1%;
+}
+.destinos img{
+	width: 60%;
+	height: 60%;
+	margin:0 auto;
+}
+.destinos span {
+	font-size: 12px;
+	font-family: verdana;
+	line-height: 1.5em;
+}
