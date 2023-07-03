@@ -33,7 +33,7 @@ Django - Usando una plantilla para ver Destinos Turísticos
   4. Para ello crear una carpeta dentro del proyecto github colaborativo con el  docente, e informar el link donde se encuentra.
      ![Texto alternativo](imag/model.png)
   6. Crear formularios de Añadir Destinos Turísticos, Modificar, Listar y  Eliminar Destinos.
-      ![Texto alternativo](tabladinamica.png)
+      ![Texto alternativo](imag/tabladinamica.png)
   8. Eres libre de agregar CSS para decorar tu trabajo. 
   9. Ya sabes que el trabajo con Git es obligatorio. Revisa el avance de la  teoría Django parte4
 
