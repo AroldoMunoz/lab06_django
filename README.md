@@ -37,3 +37,4 @@ Django - Usando una plantilla para ver Destinos Turísticos
   8. Eres libre de agregar CSS para decorar tu trabajo. 
   9. Ya sabes que el trabajo con Git es obligatorio. Revisa el avance de la  teoría Django parte4
 
+github: https://github.com/AroldoMunoz/lab06_django.git
